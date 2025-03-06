@@ -1,7 +1,6 @@
 英語版の後に日本語版がございます。
 영어판, 일본어판 뒤에 한국어판이 있습니다.
 
-```markdown
 # Calculating π using the Monte Carlo Method
 
 This project is a Python program that estimates the value of pi (π) using the Monte Carlo method.
