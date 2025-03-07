@@ -63,9 +63,13 @@ def simulate_monte_carlo(input_number):
             point_list[i] = point
             # Update the counter based on point position
             counter = point_checker(point, counter, circle_radius)
+
+        # Calculate and display the final results
+        monte_evaluator(input_number, counter, circle_radius)
         
         # Visualize the simulation results
         try_plotting = monte_plotter(point_list, circle_radius)
+
         if try_plotting:
             print("Figure generated successfully!")
         else:
@@ -77,8 +81,8 @@ def simulate_monte_carlo(input_number):
             point = np.random.rand(2)  # Generate a random point
             counter = point_checker(point, counter, circle_radius)  # Update counter
 
-    # Calculate and display the final results
-    monte_evaluator(input_number, counter, circle_radius)
+        # Calculate and display the final results
+        monte_evaluator(input_number, counter, circle_radius)
 
 
 # Calculate and display the results of the Monte Carlo simulation
