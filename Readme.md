@@ -1,13 +1,19 @@
-英語版の後に日本語版がございます。  
-영어판, 일본어판 뒤에 한국어판이 있습니다.
+# Monte Carlo Method for Pi Estimation
+
+英語の後に日本語の説明が続きます。
+영어, 일본어에 이어 한국어 설명이 있습니다.
+
+## Overview
+
+This project provides a simple simulation of the Monte Carlo method to estimate the value of π (pi). It works by randomly generating points within a unit square and calculating what fraction of those points fall within a quarter circle of radius 1.
 
 ## File Structure
 
 The project consists of the following files:
-- `main.py`: Entry point of the program
-- `monte_carlogic.py`: Core logic for the Monte Carlo simulation
-- `monte_plot.py`: Visualization functionality
-- `input_validation.py`: User input handling and validation
+- main.py: Entry point of the program
+- monte_carlogic.py: Core logic for the Monte Carlo simulation
+- monte_plot.py: Visualization functionality
+- input_validation.py: User input handling and validation
 
 ## Visualization
 
@@ -32,6 +38,30 @@ venv\Scripts\activate  # Windows
 # Run the program
 python main.py
 ```
+
+## Requirements
+
+- Python 3.x
+- NumPy
+- Matplotlib
+
+To install the required packages:
+
+```bash
+pip install numpy matplotlib
+```
+
+## Note
+
+The maximum input value is limited to 16,777,216 (2^24) to prevent memory issues with large simulations.
+
+---
+
+# モンテカルロ法によるπの推定
+
+## 概要
+
+このプロジェクトは、モンテカルロ法を使用してπ（円周率）の値を推定する簡単なシミュレーションを提供します。単位正方形内にランダムな点を生成し、半径1の四分円内に落ちる点の割合を計算することで動作します。
 
 ## ファイル構成
 
@@ -65,6 +95,30 @@ venv\Scripts\activate  # Windows
 python main.py
 ```
 
+## 必要条件
+
+- Python 3.x
+- NumPy
+- Matplotlib
+
+必要なパッケージをインストールするには：
+
+```bash
+pip install numpy matplotlib
+```
+
+## 注意
+
+入力値の上限は16,777,216（2^24）に制限されています。これは、大規模なシミュレーションでのメモリ問題を防ぐためです。
+
+---
+
+# 몬테카를로 방식을 이용한 π 추정
+
+## 개요
+
+이 프로젝트는 몬테카를로 방식을 사용하여 π(파이) 값을 추정하는 간단한 시뮬레이션을 제공합니다. 단위 정사각형 내에서 무작위 점을 생성하고, 반지름 1의 사분원 안에 들어가는 점의 비율을 계산하는 방식으로 동작합니다.
+
 ## 파일 구조
 
 이 프로젝트는 다음 파일들로 구성되어 있습니다:
@@ -96,3 +150,19 @@ venv\Scripts\activate  # Windows
 # 프로그램 실행
 python main.py
 ```
+
+## 요구 사항
+
+- Python 3.x
+- NumPy
+- Matplotlib
+
+필요한 패키지 설치:
+
+```bash
+pip install numpy matplotlib
+```
+
+## 참고
+
+입력값의 상한은 16,777,216(2^24)으로 제한되어 있습니다. 이는 대규모 시뮬레이션에서 메모리 문제를 방지하기 위함입니다.

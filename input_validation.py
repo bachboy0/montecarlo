@@ -9,25 +9,27 @@ def natural_number():
     """
     input_num = None
     string_input = input("Enter natural number: ")
-    # Set a limit for the maximum number of points
+    # Set a limit for the maximum number of points to prevent memory issues
     limit = 16777216  # 2^24 - limit set due to memory and computation time constraints
     
-    # Check if the input is a valid number
+    # Check if the input string contains only digits (is a valid number)
     if string_input.isdecimal():
         input_num = int(string_input)
     
-    # Throw message if input is invalid
+    # Process the input value and determine what to return
     if input_num is None:
-        print("It is not number. Try again.")
+        # Input couldn't be converted to an integer
+        print("It is not a number. Try again.")
         return False
     # Check if the input number is within the allowed limit
     elif input_num >= limit:
-        print(f"Number is too large, 1 to {limit-1} is available. Please Try again.")
+        print(f"Number is too large, 1 to {limit-1} is available. Please try again.")
         return False
-    # Exit condition
+    # Exit condition - user chose to quit
     elif input_num == 0:
         print("Thank you! See you another time!")
-        return None  # Explicitly return None
+        return None  # Explicitly return None to signal program exit
+    # Valid natural number input
     else:
         return input_num
 
@@ -41,19 +43,20 @@ def asking_plot():
         bool: True if 'y' is entered, False if 'n' is entered
     """
     while True:
-        yes_or_no = input("Would you like to plot this?(y/n)")
-        yes = yes_or_no == "y" 
+        yes_or_no = input("Would you like to plot this? (y/n): ")
+        yes = yes_or_no == "y"
         no = yes_or_no == "n"
         
-        # Check if input is not a single character
+        # Validate user input and handle different cases
         if len(yes_or_no) != 1:
-            print("Please input \'y\' or \'n\' and press enter.")
-        # If 'y' was entered
+            # Input is not a single character
+            print("Please input 'y' or 'n' and press enter.")
         elif yes:
+            # User wants to plot the simulation
             return True
-        # If 'n' was entered
         elif no:
+            # User does not want to plot the simulation
             return False
-        # If a single character other than 'y' or 'n' was entered
         else:
-            print("Please input \'y\' or \'n\' and press enter.")
+            # Input is a single character but not 'y' or 'n'
+            print("Please input 'y' or 'n' and press enter.")
