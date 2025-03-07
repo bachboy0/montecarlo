@@ -68,7 +68,7 @@ def simulate_monte_carlo(input_number):
         monte_evaluator(input_number, counter, circle_radius)
         
         # Visualize the simulation results
-        try_plotting = monte_plotter(point_list, circle_radius)
+        try_plotting = monte_plotter(input_number, point_list, circle_radius)
 
         if try_plotting:
             print("Figure generated successfully!")

@@ -42,8 +42,11 @@ def asking_plot():
     Returns:
         bool: True if 'y' is entered, False if 'n' is entered
     """
+    print("\nCAUTION: Plotting may take a long time if you input over a million points.")
+    print("Ensure your computer has sufficient performance before proceeding.")
+    
     while True:
-        yes_or_no = input("Would you like to plot this? (y/n): ")
+        yes_or_no = input("\nWould you like to plot this? (y/n): ")
         yes = yes_or_no == "y"
         no = yes_or_no == "n"
         

@@ -18,8 +18,8 @@ The project consists of the following files:
 ## Visualization
 
 The program offers visualization of the Monte Carlo simulation. When prompted, you can choose to generate a plot showing:
-- A unit square (blue outline)
-- A circle with radius 0.5 (green outline)
+- A unit square (blue)
+- A circle with radius 0.5 (cyan)
 - Random points generated during simulation (red dots)
 
 If the plotting functionality doesn't work in your environment, the plot will be saved as "monte_carlo_plot.png" in the current directory.
@@ -74,8 +74,8 @@ The maximum input value is limited to 16,777,216 (2^24) to prevent memory issues
 ## 視覚化
 
 このプログラムはモンテカルロシミュレーションの視覚化を提供します。プロンプトが表示されたら、以下を表示するプロットを生成するかどうかを選択できます：
-- 単位正方形（青い輪郭）
-- 半径0.5の円（緑の輪郭）
+- 単位正方形（青）
+- 半径0.5の円（青緑色）
 - シミュレーション中に生成されたランダムな点（赤い点）
 
 お使いの環境でプロット機能が動作しない場合、プロットは現在のディレクトリに「monte_carlo_plot.png」として保存されます。
@@ -130,8 +130,8 @@ pip install numpy matplotlib
 ## 시각화
 
 이 프로그램은 몬테카를로 시뮬레이션의 시각화를 제공합니다. 메시지가 표시되면 다음을 보여주는 플롯을 생성할지 여부를 선택할 수 있습니다:
-- 단위 정사각형(파란색 윤곽선)
-- 반경 0.5의 원(초록색 윤곽선)
+- 단위 정사각형(파란색)
+- 반경 0.5의 원(청록색)
 - 시뮬레이션 중 생성된 무작위 점(빨간색 점)
 
 환경에서 플롯 기능이 작동하지 않는 경우, 플롯은 현재 디렉토리에 "monte_carlo_plot.png"로 저장됩니다.
