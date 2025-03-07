@@ -40,17 +40,17 @@ def monte_plotter(points_num, points_array, cir_rad):
         # Plot all randomly generated points as small red dots
         # s=0.5 controls the size, alpha=0.75 controls transparency
         if points_num < 1024:
-            plt.scatter(x_coords, y_coords, s=0.5, c="r", marker=".", alpha=1)
-        elif 1024 <= points_num < 65536:
-            plt.scatter(x_coords, y_coords, s=0.5, c="r", marker=".", alpha=0.75)
-        elif 65536 <= points_num < 262144:
-            plt.scatter(x_coords, y_coords, s=0.5, c="r", marker=".", alpha=0.625)
-        elif 262144 <= points_num < 1048576:
             plt.scatter(x_coords, y_coords, s=0.5, c="r", marker=".", alpha=0.5)
-        elif 1048576 <= points_num < 4194304:
+        elif 1024 <= points_num < 65536:
+            plt.scatter(x_coords, y_coords, s=0.5, c="r", marker=".", alpha=0.375)
+        elif 65536 <= points_num < 262144:
             plt.scatter(x_coords, y_coords, s=0.5, c="r", marker=".", alpha=0.25)
-        else:
+        elif 262144 <= points_num < 1048576:
             plt.scatter(x_coords, y_coords, s=0.5, c="r", marker=".", alpha=0.125)
+        elif 1048576 <= points_num < 4194304:
+            plt.scatter(x_coords, y_coords, s=0.5, c="r", marker=".", alpha=0.03125)
+        else:
+            plt.scatter(x_coords, y_coords, s=0.5, c="r", marker=".", alpha=0.015625)
 
         # Ensure proper scaling of the plot with equal aspect ratio
         plt.axis("scaled")
