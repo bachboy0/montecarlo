@@ -1,41 +1,46 @@
 # Monte Carlo Method for Pi Estimation
 
-英語の後に日本語の説明が続きます。
-영어, 일본어에 이어 한국어 설명이 있습니다.
-
 ## Overview
 
-This project provides a simple simulation of the Monte Carlo method to estimate the value of π (pi). It works by randomly generating points within a unit square and calculating what fraction of those points fall within a quarter circle of radius 1.
+This project simulates the estimation of π (Pi) using the Monte Carlo method.
+It randomly generates points and evaluates them against a circle to approximate π.
 
 ## File Structure
 
-The project consists of the following files:
-- main.py: Entry point of the program
-- monte_carlogic.py: Core logic for the Monte Carlo simulation
-- monte_plot.py: Visualization functionality
-- input_validation.py: User input handling and validation
+The project is composed of the following files:
+
+- **main.py**:  
+  The entry point for the application. It manages user interaction, gathers input, and runs the simulation.
+  
+- **monte_carlogic.py**:  
+  Contains the core logic for running the Monte Carlo simulation and evaluating the results.
+  
+- **monte_plot.py**:  
+  Provides visualization for the simulation by plotting points, a square, and a circle.
+  
+- **input_validation.py**:  
+  Handles user input and validation of numerical values and the circle’s radius.
 
 ## Visualization
 
-The program offers visualization of the Monte Carlo simulation. When prompted, you can choose to generate a plot showing:
-- A unit square (blue)
-- A circle with radius 0.5 (cyan)
-- Random points generated during simulation (red dots)
+Users can visualize the simulation process and results. The generated plots display:
+- A square and a circle for reference.
+- Points generated during simulation.
 
-If the plotting functionality doesn't work in your environment, the plot will be saved as "monte_carlo_plot.png" in the current directory.
+If interactive display is not available, the plot will be saved as "monte_carlo_plot.png" in the current directory.
 
 ## How to Run
 
 ```bash
 # Navigate to the project directory
-cd /path/to/montecarlo
+cd /path/to/your/montecarlo
 
 # Activate virtual environment (if created)
 source venv/bin/activate  # Linux/Mac
 # or
 venv\Scripts\activate  # Windows
 
-# Run the program
+# Run the main program
 python main.py
 ```
 
@@ -45,15 +50,11 @@ python main.py
 - NumPy
 - Matplotlib
 
-To install the required packages:
+Install the required packages with:
 
 ```bash
 pip install numpy matplotlib
 ```
-
-## Note
-
-The maximum input value is limited to 16,777,216 (2^24) to prevent memory issues with large simulations.
 
 ---
 
@@ -61,37 +62,45 @@ The maximum input value is limited to 16,777,216 (2^24) to prevent memory issues
 
 ## 概要
 
-このプロジェクトは、モンテカルロ法を使用してπ（円周率）の値を推定する簡単なシミュレーションを提供します。単位正方形内にランダムな点を生成し、半径1の四分円内に落ちる点の割合を計算することで動作します。
+このプロジェクトは、モンテカルロ法を使用してπ（円周率）の推定を行います。
+ランダムな点を生成し、円と比較することでπの近似値を求めます。
 
 ## ファイル構成
 
-このプロジェクトは以下のファイルで構成されています：
-- main.py: プログラムのエントリーポイント
-- monte_carlogic.py: モンテカルロシミュレーションのコアロジック
-- monte_plot.py: 視覚化機能
-- input_validation.py: ユーザー入力の処理とバリデーション
+プロジェクトは以下のファイルで構成されています：
+
+- **main.py**:  
+  アプリケーションのエントリーポイント。ユーザーとの対話、入力の取得、およびシミュレーションの実行を管理します。
+  
+- **monte_carlogic.py**:  
+  モンテカルロ法によるシミュレーションのコアロジックと、結果の評価を含む機能を提供します。
+  
+- **monte_plot.py**:  
+  シミュレーション結果の視覚化を行うため、点、正方形、円をプロットで表示します。
+  
+- **input_validation.py**:  
+  ユーザー入力の処理と、数値や円の半径のバリデーションを担当します。
 
 ## 視覚化
 
-このプログラムはモンテカルロシミュレーションの視覚化を提供します。プロンプトが表示されたら、以下を表示するプロットを生成するかどうかを選択できます：
-- 単位正方形（青）
-- 半径0.5の円（青緑色）
-- シミュレーション中に生成されたランダムな点（赤い点）
+シミュレーションの過程とその結果を視覚化できます。生成されるプロットは以下の要素を含みます：
+- 参照用の正方形と円
+- シミュレーション中に生成された点
 
-お使いの環境でプロット機能が動作しない場合、プロットは現在のディレクトリに「monte_carlo_plot.png」として保存されます。
+インタラクティブな表示が利用できない場合、プロットはカレントディレクトリ内に「monte_carlo_plot.png」として保存されます。
 
 ## 実行方法
 
 ```bash
 # プロジェクトディレクトリに移動
-cd /path/to/montecarlo
+cd /path/to/your/montecarlo
 
-# 仮想環境を有効化（作成した場合）
-source venv/bin/activate  # Linux/Mac
+# 仮想環境を有効化（作成済みの場合）
+source venv/bin/activate  # Linux/Mac用
 # または
-venv\Scripts\activate  # Windows
+venv\Scripts\activate  # Windows用
 
-# プログラムを実行
+# プログラムの実行
 python main.py
 ```
 
@@ -101,15 +110,11 @@ python main.py
 - NumPy
 - Matplotlib
 
-必要なパッケージをインストールするには：
+以下のコマンドで必要パッケージをインストールしてください：
 
 ```bash
 pip install numpy matplotlib
 ```
-
-## 注意
-
-入力値の上限は16,777,216（2^24）に制限されています。これは、大規模なシミュレーションでのメモリ問題を防ぐためです。
 
 ---
 
@@ -117,35 +122,43 @@ pip install numpy matplotlib
 
 ## 개요
 
-이 프로젝트는 몬테카를로 방식을 사용하여 π(파이) 값을 추정하는 간단한 시뮬레이션을 제공합니다. 단위 정사각형 내에서 무작위 점을 생성하고, 반지름 1의 사분원 안에 들어가는 점의 비율을 계산하는 방식으로 동작합니다.
+이 프로젝트는 몬테카를로 방식을 사용하여 π (파이)를 추정합니다.
+무작위로 점을 생성하고, 원과 비교하여 π의 근사값을 계산합니다.
 
 ## 파일 구조
 
-이 프로젝트는 다음 파일들로 구성되어 있습니다:
-- main.py: 프로그램의 진입점
-- monte_carlogic.py: 몬테카를로 시뮬레이션의 핵심 로직
-- monte_plot.py: 시각화 기능
-- input_validation.py: 사용자 입력 처리 및 검증
+프로젝트는 다음 파일들로 구성되어 있습니다:
+
+- **main.py**:  
+  프로그램의 진입점으로, 사용자와의 상호작용, 입력 처리 및 시뮬레이션 실행을 담당합니다.
+  
+- **monte_carlogic.py**:  
+  몬테카를로 시뮬레이션의 핵심 로직과 결과 평가 기능을 포함합니다.
+  
+- **monte_plot.py**:  
+  시뮬레이션 결과를 시각화하기 위해 점, 정사각형, 원을 플롯합니다.
+  
+- **input_validation.py**:  
+  사용자 입력 처리와 숫자, 원의 반지름에 대한 유효성 검사를 수행합니다.
 
 ## 시각화
 
-이 프로그램은 몬테카를로 시뮬레이션의 시각화를 제공합니다. 메시지가 표시되면 다음을 보여주는 플롯을 생성할지 여부를 선택할 수 있습니다:
-- 단위 정사각형(파란색)
-- 반경 0.5의 원(청록색)
-- 시뮬레이션 중 생성된 무작위 점(빨간색 점)
+사용자는 시뮬레이션 과정과 결과를 시각화할 수 있습니다. 생성된 플롯에는 다음 요소가 포함됩니다:
+- 기준이 되는 정사각형과 원
+- 시뮬레이션 중 생성된 무작위 점들
 
-환경에서 플롯 기능이 작동하지 않는 경우, 플롯은 현재 디렉토리에 "monte_carlo_plot.png"로 저장됩니다.
+만약 인터랙티브한 표시가 불가능할 경우, 플롯은 현재 디렉토리에 "monte_carlo_plot.png" 파일로 저장됩니다.
 
 ## 실행 방법
 
 ```bash
 # 프로젝트 디렉토리로 이동
-cd /path/to/montecarlo
+cd /path/to/your/montecarlo
 
-# 가상 환경 활성화(생성한 경우)
-source venv/bin/activate  # Linux/Mac
+# 가상 환경 활성화(생성된 경우)
+source venv/bin/activate  # Linux/Mac용
 # 또는
-venv\Scripts\activate  # Windows
+venv\Scripts\activate  # Windows용
 
 # 프로그램 실행
 python main.py
@@ -157,12 +170,8 @@ python main.py
 - NumPy
 - Matplotlib
 
-필요한 패키지 설치:
+필요한 패키지는 다음 명령어로 설치할 수 있습니다:
 
 ```bash
 pip install numpy matplotlib
 ```
-
-## 참고
-
-입력값의 상한은 16,777,216(2^24)으로 제한되어 있습니다. 이는 대규모 시뮬레이션에서 메모리 문제를 방지하기 위함입니다.
